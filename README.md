@@ -10,3 +10,9 @@ After the bot is called User can chooes the service by enter the number:<br />
 4 for the person-person customer service<br />
 The Bot will show different comments for different choices.<br />
 If the comment is invalid, the bot will return and request the user to choose again
+
+<div class="mermaid">
+            graph TD 
+            A[Client] --> B[ChatBot] : Request Service
+            B --> A :Respone to Request
+        </div>
