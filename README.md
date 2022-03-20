@@ -23,5 +23,18 @@ Their is also an autocorrect feature, but it still has a few bugs.
             graph TD
     A[Client] -->|Sent Request| B(Chat Bot)
     B -->|Sent Respone| A
+    
+    
+    
 ```
+```mermaid
+graph TD
+    A[Client] --> B(Chat Bot)
+    B --> A
+    A --> C(Spell Check)
+    C --> D[USA]
+    D --> C
+    B --> E[DUS Store]
+    E --> B
+ ```
 >>>>>>> 68c8abf3b7313e44816f7d0996bcf04448c333bf
