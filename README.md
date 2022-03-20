@@ -21,7 +21,7 @@ Their is also an autocorrect feature, but it still has a few bugs.
 =======
 ```mermaid
             graph TD
-    A[Client] -->|Sent Request| B(Chat Bot)
+    A[Client] -->|Sent Request| B[Chat Bot]
     B -->|Sent Respone| A
     
     
