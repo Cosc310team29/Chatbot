@@ -1,16 +1,18 @@
 package gui;
 import java.awt.BorderLayout;
-
+import java.util.Dictionary;
+import java.awt.*;
 import javax.swing.*;
 
 public class GUI {
 
 
     public GUI(){
+
         JFrame frame = new JFrame();
         JPanel panel = new JPanel();
         JLabel label = new JLabel("Click anywhere to start conversation");
-
+  
         panel.setBorder(BorderFactory.createEmptyBorder(300, 300, 300, 300));
         panel.add(label);
         frame.add(panel, BorderLayout.CENTER);
@@ -20,8 +22,9 @@ public class GUI {
         frame.setVisible(true);
         for (int i = 0; i <30; i++){
         String textInput = JOptionPane.showInputDialog(frame, "Enter Hello to chat: ");
-       JOptionPane.showMessageDialog(frame, "You wrote: " + textInput);
+        JOptionPane.showMessageDialog(frame, "You wrote: " + textInput);
         System.out.println(textInput);
+
         if (textInput.equals("Hello")) {
         	for (int j = 0; j <30; j++){
         	String option = JOptionPane.showInputDialog(frame, "what can I help you today?\r\n" + "1 issue with the item\r\n"
@@ -49,9 +52,11 @@ public class GUI {
         }
     }
     }
+
     public static void main(String[] args){
    
         new GUI();
-        
+        //SpellChk spl = new SpellChk();
+        //spl.Dictionary1(textInput);
     }
-
+}

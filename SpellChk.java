@@ -1,7 +1,18 @@
+package gui;
 import java.io.*;
+import java.util.Scanner;
 
 public class SpellChk{
-    public static void main(String[] args) throws Exception{
-        FileInputStream fil = new FileInputStream("C://Users//cormacwalsh//usa.txt");
+
+    public boolean Dictionary1(String input){
+        boolean chck = false;
+        Scanner sc = new Scanner(new File("usa.txt"));
+        while (sc.hasNextLine()){
+            String line = sc.nextLine();
+            if (line == input){
+                    chck = true;
+            }
+        }
+        return chck;
     }
 }
