@@ -20,8 +20,8 @@ Their is also an autocorrect feature, but it still has a few bugs.
 
 =======
 ```mermaid
-            graph TD 
-            A[Client] --> B[ChatBot];
-            B --> A
+            graph TD
+    A[Client] -->|Sent Request| B(Chat Bot)
+    B -->|Sent Respone| A
 ```
 >>>>>>> 68c8abf3b7313e44816f7d0996bcf04448c333bf
