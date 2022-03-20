@@ -13,6 +13,6 @@ If the comment is invalid, the bot will return and request the user to choose ag
 
 <div class="mermaid">
             graph TD 
-            A[Client] --> B[ChatBot] : Request Service
-            B --> A :Respone to Request
+            A[Client] --> B[ChatBot] : Request Service;
+            B --> A :Respone to Request;
         </div>
